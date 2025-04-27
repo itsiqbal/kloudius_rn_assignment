@@ -12,12 +12,12 @@ import { Paths } from '@/navigation/paths';
 function ApplicationNavigator() {
   const { colors } = useTheme();
 
-  const getIcon = (path: string, focused = false,) => {
+  const getIcon = (path: string, focused = false) => {
     return (
       <IconByVariant
         height={32}
         path={path}
-        stroke={focused ? colors.purple500: colors.gray400}
+        stroke={focused ? colors.purple500 : colors.gray400}
         width={32}
       />
     );
@@ -44,8 +44,7 @@ function ApplicationNavigator() {
               headerTitle: Paths.History,
               tabBarAccessibilityLabel: Paths.History,
               tabBarActiveBackgroundColor: colors.purple100,
-              tabBarIcon: ({ focused, color }) =>
-                getIcon('history', focused, color),
+              tabBarIcon: ({ focused }) => getIcon('history', focused),
               tabBarShowLabel: false,
             }}
           />

@@ -67,7 +67,7 @@ function AutoCompleteTextInput({
           >
             {locationResults.map((location) => (
               <TouchableOpacity
-                key={location.id}
+                key={`key-${location.id}-${location.place_id}`}
                 onPress={() =>
                   void handlePressOnSuggestedItem(location.place_id)
                 }
