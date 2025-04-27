@@ -23,7 +23,13 @@ git clone https://github.com/itsiqbal/kloudius_rn_assignment.git
 
 ```
 
-### 2. Install dependencies
+### 2. Create `.env` File
+
+- Create a `.env` file at the root of your project.
+- Refer to the `.env.example` file for the correct format.
+- Add your **Google Maps API key** to the `.env` file to ensure the project runs properly.
+
+### 3. Install dependencies
 
 ```bash
 cd kloudius_rn_assignment/
@@ -34,7 +40,7 @@ cd ios && pod install #pod installation for iOS only
 
 ```
 
-### 3.  Run on iOS
+### 4.  Run on iOS
 - Open the `RNAssignment.xcworkspace` file in **Xcode**.
 - Run the project.
 - You may encounter a known `react-native-maps` issue:  
@@ -44,7 +50,7 @@ cd ios && pod install #pod installation for iOS only
 - Run the project again.
 - The iOS project should now be running successfully.
 
-### 4. Run on Android
+### 5. Run on Android
 
 - Open the project in **Android Studio**.
 - Make sure you have an Android emulator running or a device connected.
